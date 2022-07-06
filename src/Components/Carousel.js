@@ -10,7 +10,7 @@ const Carousel = () => {
     const img = {
         height: '100%',
         // padding: '12px',
-        opacity: '0.8',
+        // opacity: '0.8',
     }
 
     const previous = {
