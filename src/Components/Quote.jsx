@@ -2,11 +2,10 @@ import React from 'react'
 
 const Quote = () => {
     const style = {
-        // border: '2px solid black',
         display: 'flex',
         justifyContent: 'center', 
         backgroundColor: 'lightgray',
-        wordSpacing: '12px'
+        wordSpacing: '12px',
     }
 
     const style1 = {
