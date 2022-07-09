@@ -37,7 +37,13 @@ const Donation = () => {
                 alt=""
               />
           </div>
-          <div class="col-6 col-md-3">One of three columns</div>
+          <div style={{ padding: "18px" }} class="col-6 col-md-3">
+              <img
+                style={{ height: "80%", width: "80%" }}
+                src="https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2017/10/05/USATODAY/usatsports/glass-jar-full-of-cois-with-donate-written-on-it-charity-donation-philanthropy_large.jpg?width=1200&disable=upscale&format=pjpg&auto=webp"
+                alt=""
+              />
+          </div>
           <div class="col-6 col-md-3">One of three columns</div>
           <div class="col-6 col-md-3">One of three columns</div>
         </div>
