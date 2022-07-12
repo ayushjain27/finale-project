@@ -1,11 +1,11 @@
 import './App.css';
-import Navbar from './Components/Navbar';
-import Quote from './Components/Quote';
-import Carousel from './Components/Carousel';
-import Quotes from './Components/Quotes';
-import Donation from './Components/Donation';
-import Shoutout from './Components/Shoutout';
-import Footer from './Components/Footer';
+import Navbar from './Components/Home/Navbar';
+import Quote from './Components/Home/Quote';
+import Carousel from './Components/Home/Carousel';
+import Quotes from './Components/Home/Quotes';
+import Donation from './Components/Home/Donation';
+import Shoutout from './Components/Home/Shoutout';
+import Footer from './Components/Home/Footer';
 
 function App() {
   return (
