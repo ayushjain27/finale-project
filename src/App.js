@@ -10,6 +10,7 @@ import Footer from './Components/Home/Footer';
 function App() {
   return (
     <>
+    {/* Started soon */}
     <Navbar />
     <Quote />
     <Carousel />
