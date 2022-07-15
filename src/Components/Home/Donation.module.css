@@ -36,6 +36,8 @@
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 0px;
+    background-color: cornsilk;
+    border: none; 
 }
 
 .card{
