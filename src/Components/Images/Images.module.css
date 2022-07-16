@@ -1,0 +1,33 @@
+.col1{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.col2{
+    background-color: green;
+}
+
+.row{
+    height: 75vh;
+}
+
+.box{
+    width: 60%;
+    height: 60%;
+    border: 2px solid white;
+}
+
+.images{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media screen and (max-width: 768px) {
+    .row{
+        height: 800px;
+    }
+}
