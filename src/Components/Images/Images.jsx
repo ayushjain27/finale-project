@@ -4,6 +4,17 @@ import styles from "./Images.module.css";
 const Images = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
+  const [imag, setImag] = useState({ title: "", description: "" });
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setImag({ title: "", description: "" })
+    console.log("clicked")
+  }
+
+  const onChange = (e) => {
+    setImag({ ...imag, [e.target.name]: e.target.value });
+  };
 
   useEffect(() => {
     if (selectedImage) {
@@ -13,9 +24,10 @@ const Images = () => {
 
   return (
     <>
-      <div className="container my-3">
+      <div className={`${styles.container} container my-3 rounded`}>
         <div className={`${styles.row} row`}>
           <div className={`${styles.col1} col-md-6`}>
+            <div className={styles.first}>
             {!imageUrl && !selectedImage && (
               <div className={`${styles.box} my-5`}>
                 <img
@@ -39,14 +51,68 @@ const Images = () => {
               id="select-image"
               style={{ display: "none" }}
               onChange={(e) => setSelectedImage(e.target.files[0])}
-              class="btn-check"
+              className="btn-check"
             />
-            <label class="btn btn-success" htmlFor="select-image">
+            <label className={`${styles.upload} btn btn-success`} htmlFor="select-image">
               UPLOAD FROM GALLERY
-            </label>{" "}
+            </label>
           </div>
-          <div className={`${styles.col2} col-md-6`}>Aysuh</div>
+              </div>
+          <div className={`${styles.col2} col-md-6`}>
+            <div className={styles.second}>
+            <div className="my-3">
+              <div className={`${styles.heading} my-3`}>
+                Your info
+              </div>
+              <div className="my-3">
+              <input
+                type="text"
+                id="title"
+                name="title"
+                value={imag.title}
+                onChange={onChange}
+                className="form-control"
+                aria-describedby="title"
+                placeholder="Enter Title*"
+                minlength={4}
+                required
+              />
+              <div id="title" className="form-text">
+                Your title must be atleast 4 characters long
+              </div>
+                </div>
+                <div>
+              <textarea
+                rows={5}
+                type="text"
+                id="description"
+                name="description"
+                value={imag.description}
+                onChange={onChange}
+                className="form-control"
+                aria-describedby="description"
+                placeholder="Enter description (Size, Quantity, Quality, etc)"
+                minlength={5}
+                required
+                />
+              <div
+                id="description"
+                className="form-text"
+                >
+                Your description must be atleast 10 characters long
+              </div>
+              </div>
+              <button onClick={handleSubmit}
+                disabled={imag.title.length < 4 || imag.description.length < 10}
+                className={`${styles.button} btn btn-warning my-3`}
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
       </div>
     </>
   );
