@@ -8,6 +8,7 @@ import Images from './Components/Images/Images';
 function App() {
   return (
     <>
+    /* Started soon */
       <Router>
         <Navbar />
         <Quote />
