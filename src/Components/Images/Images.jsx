@@ -121,7 +121,7 @@ const Images = () => {
                 <button
                   onClick={handleSubmit}
                   disabled={
-                    imag.title.length < 4 || imag.description.length < 10 || {text} !== "One"
+                    imag.title.length < 4 || imag.description.length < 10 || {text} === "One"
                   }
                   className={`${styles.button} btn btn-warning my-3`}
                   type="submit"
