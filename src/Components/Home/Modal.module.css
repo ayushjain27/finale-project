@@ -49,6 +49,7 @@
 
 .row{
     padding: 12px 2px;
+    cursor: pointer;
 }
 
 .col{

@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./Modal.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Modal = () => {
+  const navigate = useNavigate()
+  const DonationHistory = () => {
+    navigate('/itemsbox')
+  }
   return (
     <>
       <div>
@@ -37,7 +42,7 @@ const Modal = () => {
                     <div className="col-12">
                       <div className="row">
                         <div className={`${styles.col} col-2`}><i class="fa-solid fa-heart"></i></div>
-                        <div className={`${styles.col1} col-10`}>Donation History</div>
+                        <div className={`${styles.col1} col-10`} onClick={DonationHistory}>Donation History</div>
                       </div>
                     </div>
                   </div>
