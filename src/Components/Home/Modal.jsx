@@ -34,7 +34,7 @@ const Modal = () => {
                     <div className="col-12">
                       <div className="row">
                         <div className={`${styles.col} col-2`}><i className="fa-solid fa-gift"></i></div>
-                        <div className={`${styles.col1} col-10`}>Make Decision</div>
+                        <div className={`${styles.col1} col-10`}>Your current Box</div>
                       </div>
                     </div>
                   </div>
