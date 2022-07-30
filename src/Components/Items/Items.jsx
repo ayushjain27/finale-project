@@ -5,7 +5,7 @@ const Items = () => {
   return (
     <>
       <div className="container">
-        <div className=" text-center mt-3 mb-3 fs-1 fw-bold">Your Items</div>
+        <div className=" text-center mt-5 mb-3 fs-1 fw-bold">Your Items</div>
         <div className={`${styles.box} mt-3`}>
           <div className={`${styles.card} card d-flex flex-row`}>
             <div>
