@@ -10,6 +10,7 @@ import Items from './Components/Items/Items';
 function App() {
   return (
     <>
+    /* Started soon */
       <Router>
         <Navbar />
         <Quote />
