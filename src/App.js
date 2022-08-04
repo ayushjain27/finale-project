@@ -9,7 +9,7 @@ import Items from './Components/Items/Items';
 
 function App() {
   return (
-    <>.
+    <>
       <Router>
         <Navbar />
         <Quote />
